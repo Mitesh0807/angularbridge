@@ -1,0 +1,15 @@
+<!-- this templete will be used for table wrapper this will have refresh and search -->
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>My Component</mat-card-title>
+    <mat-card-subtitle
+      >Search Title:
+      <input type="text" (ngModelChange)="search()" [(ngModel)]="searchTitle"
+    /></mat-card-subtitle>
+    <button mat-raised-button color="primary" (click)="refresh()">
+      Refresh
+    </button>
+  </mat-card-header>
+  <ng-content></ng-content>
+</mat-card>
